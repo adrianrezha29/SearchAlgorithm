@@ -105,7 +105,7 @@ namespace SearchAlgorithm
         }
         static void Main(String[] args)
         {
-            Program.MyList = new Program();
+            Program myList = new Program();
             int pilihanmenu;
             char ch;
 
@@ -119,10 +119,28 @@ namespace SearchAlgorithm
             switch (pilihanmenu)
             {
                 case 1:
-
+                    Console.WriteLine("");
+                    Console.WriteLine("-------------");
+                    Console.WriteLine("Linear Search");
+                    Console.WriteLine("-------------");
+                    myList.input();
+                    myList.LinearSearch();
+                    break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("-------------");
+                    Console.WriteLine("Binary Search");
+                    Console.WriteLine("-------------");
+                    myList.input();
+                    myList.LinearSearch();
+                    break;
+                case 3;
+                    Console.WriteLine("Exit");
+                    break;
+                default:
+                    Console.WriteLine("Error");
+                    break;
             }
         }
-
-       
     }
 }
