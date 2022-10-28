@@ -31,7 +31,11 @@ namespace SearchAlgorithm
             Console.WriteLine(" Enter array Elements ");
             Console.WriteLine("----------------------");
             for ( i = 0; i < n; i++ )
-            { }
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
         
         }
     }
