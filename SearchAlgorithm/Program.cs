@@ -11,6 +11,8 @@ namespace SearchAlgorithm
         //Array to be searched
         int[] arr = new int[20];
         //Number of elements in the array
+        int n;
+        //get number of element to store in the array
         int i;
 
         public void input()
@@ -74,6 +76,34 @@ namespace SearchAlgorithm
             } while ((ch == 'y') || (ch == 'y'));
         }
         public void LinearSearch()
+        {
+            char ch;
+            //search for number of comparison
+            int ctr;
+            do
+            {
+                //accept the number to be searched
+                Console.Write("\nEnter the element you want to search: ");
+                int item = Convert.ToInt32((Console.ReadLine()));
+
+                ctr = 0;
+                for (i = 0; i < n; i++)
+                {
+                    ctr++;
+                    if (arr[i] == item)
+                    {
+                        Console.WriteLine("\n" + item.ToString() + "Found at position" + (i + 1).ToString());
+                        break;
+                    }
+                }
+                if (i == n)
+                    Console.WriteLine("\n" + item.ToString() + "not found in the array");
+                Console.WriteLine("\nNumber of comparison: " + ctr);
+                Console.WriteLine("\nContinue search (y/n):");
+                ch = char.Parse(Console.ReadLine());
+            } while ((ch == 'y') || (ch == 'y'));
+        }
+        static void Main(String[] args)
         {
 
         }
