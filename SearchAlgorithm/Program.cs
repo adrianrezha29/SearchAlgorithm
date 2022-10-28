@@ -104,8 +104,8 @@ namespace SearchAlgorithm
             } while ((ch == 'y') || (ch == 'y'));
         }
         static void Main(String[] args)
-        {
+        
 
-        }
+       
     }
 }
