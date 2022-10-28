@@ -36,7 +36,7 @@ namespace SearchAlgorithm
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
-        
         }
+        public void BinarySearch()
     }
 }
